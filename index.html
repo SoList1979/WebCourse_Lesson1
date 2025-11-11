@@ -6,7 +6,6 @@
         <title>Page Title</title>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <style>
-            /* Общие стили для страницы */
             body {
                 background-color: #000000; /* Чёрный фон */
                 color: #e0e0e0; /* Светло‑серый текст */
@@ -23,7 +22,6 @@
                 text-align: center;
             }
 
-            /* Стили для заголовка */
             h1 {
                 color: #ffffff; /* Белый цвет заголовка */
                 font-size: 2.5rem;
@@ -32,35 +30,12 @@
                 margin-bottom: 10px;
             }
 
-            /* Стили для абзаца */
             p {
                 font-size: 1.2rem;
                 color: #b0b0b0; /* Чуть темнее, чем основной текст */
                 margin-bottom: 20px;
             }
 
-            /* Контейнер для кликабельного изображения */
-            .clickable-image {
-                display: block;
-                margin: 20px 0;
-                position: relative;
-            }
-
-            /* Стили для изображения внутри ссылки */
-            .clickable-image img {
-                display: block;
-                border-radius: 12px;
-                box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
-                transition: transform 0.3s, box-shadow 0.3s;
-            }
-
-            /* Эффект при наведении на изображение */
-            .clickable-image:hover img {
-                transform: scale(1.05);
-                box-shadow: 0 8px 24px rgba(255, 255, 255, 0.2);
-            }
-
-            /* Стили для ссылки */
             a {
                 display: block;
                 text-align: center;
@@ -70,36 +45,28 @@
                 margin-top: 20px;
                 transition: color 0.3s, text-shadow 0.3s;
             }
-
             /* Эффект при наведении на ссылку */
+
             a:hover {
                 color: #ffffff;
                 text-shadow: 0 0 8px rgba(77, 166, 255, 0.6);
             }
+
+            img {
+                pointer-events: none;
+            }
         </style>
-        <!-- <script>
-            // Блокировка контекстного меню на изображении
-            document.addEventListener("DOMContentLoaded", function () {
-                const imgLink = document.querySelector(".clickable-image");
-                imgLink.addEventListener("contextmenu", function (e) {
-                    e.preventDefault();
-                });
-            });
-        </script>
-        <script src="main.js"></script> -->
     </head>
     <body>
-        <h1>Учебный сайт визитка моего проекта</h1>
-        <p>Здесь на курсах я обучаюсь Web</p>
+        <h1>Визитка</h1>
+        <p>на этих курсах я обучаюсь Web</p>
 
-        <!-- Кликабельное изображение по центру -->
-        <a href="https://icogon.h1n.ru/index.html" class="clickable-image">
-            <img src="Гифка.gif" height="200px" alt="Иконка сайта" />
-        </a>
+        <!-- изображение по центру -->
+
+        <img src="Гифка.gif" height="200px" alt="Иконка сайта" />
 
         <a href="https://icogon.h1n.ru/index.html">
-            На картинке гифка моего любимого проекта, над которым сейчас работаю
-            для Яндекс‑Игр
+            Проект над которым сейчас работаю для Яндекс‑Игр
         </a>
     </body>
 </html>
